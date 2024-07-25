@@ -5,13 +5,13 @@
 class N2xCli < Formula
   desc "n2x-cli"
   homepage "https://n2x.io"
-  version "0.0.1"
+  version "0.0.2"
   license "Apache License 2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/n2x-io/x-cli/releases/download/v0.0.1/n2x-cli_0.0.1_darwin_amd64.tar.gz"
-      sha256 "5474e02367cfb7b42eb741989729c5b8558af1d6568aa7625e41125c94f5be47"
+      url "https://github.com/n2x-io/x-cli/releases/download/v0.0.2/n2x-cli_0.0.2_darwin_amd64.tar.gz"
+      sha256 "7ab652a69686141ce1a9bbffb60c3e907c4544ae6cbe7a80669a1baaf263abcc"
 
       def install
         bin.install "n2xctl"
@@ -21,8 +21,8 @@ class N2xCli < Formula
       end
     end
     on_arm do
-      url "https://github.com/n2x-io/x-cli/releases/download/v0.0.1/n2x-cli_0.0.1_darwin_arm64.tar.gz"
-      sha256 "8cee2f5ad94911f0a0ae0d94f1d28f9d0b5a457d201ac07e883dd095d21ac3f0"
+      url "https://github.com/n2x-io/x-cli/releases/download/v0.0.2/n2x-cli_0.0.2_darwin_arm64.tar.gz"
+      sha256 "55229eb028d381a55a14d80bb83bbd8edecaa99dd584b2f29e9b26caf46a965b"
 
       def install
         bin.install "n2xctl"
@@ -36,8 +36,8 @@ class N2xCli < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/n2x-io/x-cli/releases/download/v0.0.1/n2x-cli_0.0.1_linux_amd64.tar.gz"
-        sha256 "694d9f41b3dd03ce74abcd6579a8a24b3cc4608a75b18894e7dfcf079e57bb1e"
+        url "https://github.com/n2x-io/x-cli/releases/download/v0.0.2/n2x-cli_0.0.2_linux_amd64.tar.gz"
+        sha256 "7ab6c697f99e24eaa523fa0687c4427cb8814d016e5112c093e939d22024b8bb"
 
         def install
           bin.install "n2xctl"
@@ -49,8 +49,8 @@ class N2xCli < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/n2x-io/x-cli/releases/download/v0.0.1/n2x-cli_0.0.1_linux_arm64.tar.gz"
-        sha256 "a9daaf1f9f7085b48bc40b7a753b4713bf484f3dcf0b9b4a84dce2fb18716b6b"
+        url "https://github.com/n2x-io/x-cli/releases/download/v0.0.2/n2x-cli_0.0.2_linux_arm64.tar.gz"
+        sha256 "8fb2fd6cb9e856057038cf3814307d008e4e8516b76e000c27cf04427341c6c5"
 
         def install
           bin.install "n2xctl"
